@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Variable Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="main">
+
+    </div>
+    <script src="script.js"></script>
+
+    <button onclick="changeColor()">Change color</button>
+    <p id="demo">This text will change color</p>
+
+    <script>
+        function changeColor() {
+            document.getElementById('demo').style.color = 'blue';
+        }
+    </script>
+
+    <button onclick="addElement()">Add element</button>
+    <div id="container"></div>
+
+    <script>
+        function addElement() {
+            let newElement = document.createElement("p");
+            newElement.innerHTML = "New element!";
+            document.getElementById("container").appendChild(newElement);
+        }
+
+    </script>
+</body>
+
+</html>
